@@ -1,5 +1,5 @@
 import { calculateCommonDays, validateEntries } from "./validator.js";
-import { attachToDom } from "./domAttacher.js";
+import { attachResult } from "./domAttacher.js";
 
 export let compareEntries = (sortedArray) => {
   let maxDays = 0;
@@ -38,5 +38,5 @@ export let compareEntries = (sortedArray) => {
       }
     }
   }
-  attachToDom(maxEmpID1, maxEmpID2, maxProjectID, maxDays);
+  attachResult(maxEmpID1, maxEmpID2, maxProjectID, maxDays);
 };
