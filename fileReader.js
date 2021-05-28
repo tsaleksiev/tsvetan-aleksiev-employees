@@ -128,13 +128,14 @@ let compareEntries = (sortedArray) => {
       for (let j = i + 1; j < sortedArray.length; j++) {
         let projectID1 = sortedArray[i][1];
         let projectID2 = sortedArray[j][1];
+
+        let empID1 = sortedArray[i][0];
+        let empID2 = sortedArray[j][0];
   
-        if (projectID1 == projectID2) {
+        if (projectID1 == projectID2 && empID1 != empID2) {
           let currdays;
-          let empID1 = sortedArray[i][0];
           let dateFrom1 = sortedArray[i][2].split("-");
           let dateTo1 = sortedArray[i][3].split("-");
-          let empID2 = sortedArray[j][0];
           let dateFrom2 = sortedArray[j][2].split("-");
           let dateTo2 = sortedArray[j][3].split("-");
   
