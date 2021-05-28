@@ -1,5 +1,6 @@
 import { validateEntries } from "./validator.js";
 import { compareEntries } from "./comparisonEngine.js";
+import { attachEmptyMessage } from "./domAttacher.js";
 
 window.onload = function () {
   document
@@ -16,7 +17,11 @@ function readFileAsString() {
 
   let reader = new FileReader();
   reader.onload = function (event) {
-    console.log(event.target.result);
+
+    if (files[0].size == 0) {
+        attachEmptyMessage();
+        return;
+    }
 
     if (event.target.result == null) {
       console.log("An error occured while reading from the data file.");
