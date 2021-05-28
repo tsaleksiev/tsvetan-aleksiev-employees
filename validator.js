@@ -1,4 +1,4 @@
-export let validateEntries = (arr) => {
+/* export let validateEntries = (arr) => {
   return (
     arr
       // Sort entries by project number
@@ -91,4 +91,4 @@ export let calculateCommonDays = (from1, to1, from2, to2) => {
   totalDaysTogether = getDaysNum(outerStart, outerEnd);
   console.log(`overlap: ${totalDaysTogether} days`);
   return totalDaysTogether;
-};
+};*/

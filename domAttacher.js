@@ -1,4 +1,4 @@
-export let attachResult = (maxEmpID1, maxEmpID2, maxProjectID, maxDays) => {
+/* export let attachResult = (maxEmpID1, maxEmpID2, maxProjectID, maxDays) => {
     let emp1Td = document.getElementById("employee1");
     emp1Td.innerText = maxEmpID1;
 
@@ -18,3 +18,4 @@ export let attachEmptyMessage = () => {
     newDiv.innerText = "The selected file is empty.";
     document.body.appendChild(newDiv);
 }
+*/

@@ -1,7 +1,8 @@
-import { calculateCommonDays, validateEntries } from "./validator.js";
-import { attachResult } from "./domAttacher.js";
 
-export let compareEntries = (sortedArray) => {
+//import { calculateCommonDays, validateEntries } from "./validator.js";
+//import { attachResult } from "./domAttacher.js";
+
+/* export let compareEntries = (sortedArray) => {
   let maxDays = 0;
   let maxEmpID1 = "";
   let maxEmpID2 = "";
@@ -39,4 +40,4 @@ export let compareEntries = (sortedArray) => {
     }
   }
   attachResult(maxEmpID1, maxEmpID2, maxProjectID, maxDays);
-};
+};*/
