@@ -5,9 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="fileReader.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Employees Assignment</title>
   </head>
   <body>
     <input type="file" id="upload" />
+    <div>Note: The program works with .txt files in the following format: EmpID, ProjectID, DateFrom, DateTo (YYYY-MM-DD format).</div>
+    <table>
+        <tr>
+          <th>Employee 1 ID</th>
+          <th>Employee 2 ID</th>
+          <th>Project ID</th>
+          <th>Worked Together</th>
+        </tr>
+        <tr>
+            <td id="employee1"></td>
+            <td id="employee2"></td>
+            <td id="project"></td>
+            <td id="timeTogether"></td>
+        </tr>
+      </table>
   </body>
 </html>
